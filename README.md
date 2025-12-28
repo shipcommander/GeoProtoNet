@@ -1,4 +1,4 @@
-# GeoProtoNet: Multi-Modal Rock Analysis
+# Quickly Distinguish All Cores: A Multimodal Sequential Optical Feature Core Mineral Identification Model
 
 ![Model Architecture](icons/GeoProtoNet.png)
 
@@ -57,36 +57,6 @@ logits = model(
 - **Cross Attention Fusion**: Multi-modal fusion with mask support
 - **GeoProtoNet**: Main integration model with dual encoders
 
-## Usage
-
-### Training
-
-```python
-from train import train_model
-from loss import prototypical_loss
-
-# Training setup
-model = GeoProtoNet(num_classes=10)
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
-
-# Train with prototypical loss
-loss, acc = prototypical_loss(input, target, n_way, k_shot, q_query)
-```
-
-### Inference
-
-```python
-from predict import predict
-
-# Load trained model
-model.load_state_dict(torch.load('model.pth'))
-model.eval()
-
-# Make predictions
-with torch.no_grad():
-    logits = model(input_data)
-    predictions = torch.argmax(logits, dim=1)
-```
 
 ## Data Format
 
@@ -166,4 +136,4 @@ If you use this code in your research, please cite:
 
 ## Contact
 
-For questions and support, please open an issue or contact [your-email@example.com].
+For questions and support, please open an issue or contact [zkq0729@gmail.com].
