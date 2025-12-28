@@ -1,6 +1,6 @@
 # GeoProtoNet: Multi-Modal Rock Analysis
 
-![Model Architecture](../icon/AIeng.png)
+![Model Architecture](../icon/GeoProtoNet.png)
 
 ## Overview
 
